@@ -1,0 +1,43 @@
+[package]
+authors = ["Solana Maintainers <maintainers@solana.foundation>"]
+edition = "2018"
+name = "solana-local-cluster"
+description = "Blockchain, Rebuilt for Scale"
+version = "1.8.14"
+repository = "https://github.com/solana-labs/solana"
+license = "Apache-2.0"
+homepage = "https://solana.com/"
+documentation = "https://docs.rs/solana-local-cluster"
+
+[dependencies]
+crossbeam-channel = "0.4"
+itertools = "0.9.0"
+gag = "1.0.0"
+fs_extra = "1.2.0"
+log = "0.4.11"
+rand = "0.7.0"
+rayon = "1.5.0"
+solana-config-program = { git = "https://github.com/solindex/programs.git", version = "=1.8.14" }
+solana-core = { git = "https://github.com/solindex/core.git", version = "=1.8.14" }
+solana-client = { git = "https://github.com/solindex/client.git", version = "=1.8.14" }
+solana-download-utils = { git = "https://github.com/solindex/download-utils.git", version = "=1.8.14" }
+solana-exchange-program = { git = "https://github.com/solindex/exchange-program.git", version = "=1.8.14" }
+solana-faucet = { git = "https://github.com/solindex/faucet.git", version = "=1.8.14" }
+solana-gossip = { git = "https://github.com/solindex/gossip.git", version = "=1.8.14" }
+solana-ledger = { git = "https://github.com/solindex/ledger.git", version = "=1.8.14" }
+solana-logger = { git = "https://github.com/solindex/logger.git", version = "=1.8.14" }
+solana-rayon-threadlimit = { git = "https://github.com/solindex/rayon-threadlimit.git", version = "=1.8.14" }
+solana-rpc = { git = "https://github.com/solindex/rpc.git", version = "=1.8.14" }
+solana-runtime = { git = "https://github.com/solindex/runtime.git", version = "=1.8.14" }
+solana-sdk = { git = "https://github.com/solindex/sdk.git", version = "=1.8.14" }
+solana-stake-program = { git = "https://github.com/solindex/programs.git", version = "=1.8.14" }
+solana-streamer = { git = "https://github.com/solindex/streamer.git", version = "=1.8.14" }
+solana-vote-program = { git = "https://github.com/solindex/programs.git", version = "=1.8.14" }
+tempfile = "3.1.0"
+
+[dev-dependencies]
+assert_matches = "1.3.0"
+serial_test = "0.4.0"
+
+[package.metadata.docs.rs]
+targets = ["x86_64-unknown-linux-gnu"]
